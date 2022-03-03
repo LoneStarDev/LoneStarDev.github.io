@@ -74,7 +74,7 @@ ul {
   width: 5rem;
   height: 100vh;
   position: fixed;
-  background-color: var(--bg-primary);
+  background-color: #23232edc;
   transition: width 200ms ease;
   z-index: 1;
 }
@@ -168,13 +168,12 @@ ul {
 
 .container {
   display: flex;
-  margin-left: 5rem;
-  padding-left: 6rem;
 }
 .container__title {
   display: flex;
   flex-direction: column;
   height: 10rem;
+
   justify-content: center;
   text-align: center;
   padding-top: 2rem;
@@ -182,7 +181,6 @@ ul {
   margin: 0;
   border-top: 3px solid black;
   background-color: #141418;
-  border-right: 5px solid #739daa;
 }
 
 .container__social {
@@ -205,7 +203,7 @@ ul {
   display: flex;
   justify-content: end;
   background-color: #141418;
-  border-right: 5px solid #739daa;
+
   height: 5rem;
 }
 
@@ -266,7 +264,7 @@ ul {
 .icon__social-button {
   height: 20px;
   vertical-align: middle;
-  padding-right: .4rem;
+  padding-right: 0.4rem;
 }
 
 .icon__social {
@@ -275,20 +273,23 @@ ul {
 }
 
 .icon__social:hover {
-  transform: scale(1.10);
+  transform: scale(1.1);
   transition-duration: 0.2s;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* TODO: nav bar restructure for smaller devices */
 
   .navbar {
     display: none;
   }
 
+  .wallet__connect {
+    display: none;
+  }
+
   .container__social > a {
-    padding-right: 2rem;
-    height: 1rem;
+    height: 0.5rem;
   }
   .icon__social {
     height: 1.5rem;
@@ -297,7 +298,7 @@ ul {
   .main__title {
     color: var(--text-secondary);
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 2rem;
     text-shadow: 0px 1px 3px #23232e;
     padding-bottom: 1rem;
   }
@@ -306,16 +307,15 @@ ul {
     display: flex;
     padding: 0;
     margin: 0;
+    height: 3rem;
+    border: none;
   }
 
   .container__social {
     display: flex;
     justify-content: center;
-    padding-left: 2rem;
-    align-items: center;
-    vertical-align: middle;
+    margin: 0;
     width: 100%;
-    height: 5rem;
   }
 
   .container__social > a {
@@ -324,13 +324,14 @@ ul {
   }
   .container__social > a:hover {
     filter: drop-shadow(0px 0px 5px rgb(15, 158, 163));
+    transform: scale(1.10);
+    transition-duration: 1s;
   }
 
   .container__header {
     display: flex;
     justify-content: end;
     background-color: #141418;
-    height: 5rem;
   }
 
   .container__cards {
@@ -369,6 +370,21 @@ ul {
     background-color: #141418;
     height: 5rem;
   }
+  .title__subheader {
+    font-size: 0.75rem;
+    color: #8dc7d8;
+    filter: saturate(200%);
+    filter: drop-shadow(0 0 2px #8dc7d8);
+    line-height: 2;
+  }
+
+  .title__subheader > span > a {
+    color: #8dc7d8;
+    text-decoration: none;
+    filter: saturate(200%);
+    filter: drop-shadow(0 0 2px #8dc7d8);
+    text-transform: uppercase;
+  }
 }
 
 /* Wallet Connection */
@@ -378,13 +394,12 @@ ul {
   align-items: center;
   align-content: center;
   margin-right: 2rem;
-  
 }
 
 .wallet__connect {
   border-radius: 5px;
   border: 2px solid rgba(79, 255, 35, 0.733);
-  padding: .2rem .5rem;
+  padding: 0.2rem 0.5rem;
   width: 11rem;
   background: none;
   color: rgb(241, 241, 241);
