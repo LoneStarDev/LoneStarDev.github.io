@@ -3,7 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Notorious Five" />
     <title>Notorious Five</title>
+    <link rel="apple-touch-icon shortcut icon" href="images/" />
+    <link
+      rel="apple-touch-icon shortcut icon"
+      sizes="60x60"
+      href="images/apple-touch-icon-ipad-76x76.png"
+    />
+    <link rel="apple-touch-icon shortcut icon" sizes="114x114" href="images/" />
+    <link
+      rel="apple-touch-icon shortcut icon"
+      sizes="144x144"
+      href="images/apple-touch-icon-ipad-retina-152x152.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -74,29 +87,38 @@
 
       <div class="container container__header">
         <div class="container__social">
-          <a href="https://twitter.com/TheLoneStarDev" target="_blank"
-            ><img
-              class="icon__social"
-              src="images/Twitter-logo-white.png"
-              alt=""
-          /></a>
-          <a
-            href="https://discord.com/channels/942126833967718560/942126833967718565"
-            target="_blank"
-            ><img
-              class="icon__social"
-              src="images/small_logo_white_RGB.png"
-              alt=""
-          /></a>
+          <div class="wallet__container">
+            <button class="wallet__connect" onclick="getAccount()"><img class="icon__social-button" src="images/phantom-logo-freelogovectors.net_.png" alt="">
+              Connect Wallet
+            </button>
+            <a href="https://twitter.com/TheLoneStarDev" target="_blank"
+              ><img
+                class="icon__social"
+                src="images/Twitter-logo-white.png"
+                alt=""
+            /></a>
+            <a
+              href="https://discord.com/channels/942126833967718560/942126833967718565"
+              target="_blank"
+              ><img
+                class="icon__social"
+                src="images/icon_clyde_white_RGB.png"
+                alt=""
+            /></a>
+          </div>
         </div>
       </div>
 
       <div class="container container__title">
         <h1 class="main__title">The Notorious Five</h1>
         <p class="title__subheader">
-          A collection of 5,555 mugshots built on the Solana Blockchain.<br> Maybe that <span class="highlight__text"><a href="">heist</a></span> was a bad idea.<br>
+          A collection of 5,555 mugshots built on the Solana Blockchain.<br />
+          Maybe that
+          <span class="highlight__text"><a href="">heist</a></span> was a bad
+          idea.<br />
         </p>
       </div>
     </main>
   </body>
+  <script src="index.js"></script>
 </html>

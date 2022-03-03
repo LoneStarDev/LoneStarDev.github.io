@@ -177,8 +177,10 @@ ul {
   height: 10rem;
   justify-content: center;
   text-align: center;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   margin: 0;
+  border-top: 3px solid black;
   background-color: #141418;
   border-right: 5px solid #739daa;
 }
@@ -261,12 +263,19 @@ ul {
   text-transform: uppercase;
 }
 
+.icon__social-button {
+  height: 20px;
+  vertical-align: middle;
+  padding-right: .4rem;
+}
+
 .icon__social {
-  height: 2rem;
+  height: 1rem;
+  padding-left: 1rem;
 }
 
 .icon__social:hover {
-  transform: scale(1.03);
+  transform: scale(1.10);
   transition-duration: 0.2s;
 }
 
@@ -360,4 +369,30 @@ ul {
     background-color: #141418;
     height: 5rem;
   }
+}
+
+/* Wallet Connection */
+
+.wallet__container {
+  align-self: center;
+  align-items: center;
+  align-content: center;
+  margin-right: 2rem;
+  
+}
+
+.wallet__connect {
+  border-radius: 5px;
+  border: 2px solid rgba(79, 255, 35, 0.733);
+  padding: .2rem .5rem;
+  width: 11rem;
+  background: none;
+  color: rgb(241, 241, 241);
+  background-color: #0eff2e8c;
+}
+.wallet__connect:hover {
+  filter: drop-shadow(1px 1px 3px rgb(3, 212, 3));
+  cursor: pointer;
+  transform: scale(0.95);
+  text-shadow: 1px 1px 0px #141418;
 }
