@@ -74,7 +74,7 @@ ul {
   width: 5rem;
   height: 100vh;
   position: fixed;
-  background-color: #23232edc;
+  background-color: #23232e;
   transition: width 200ms ease;
   z-index: 1;
 }
@@ -133,6 +133,7 @@ ul {
 
 .navbar:hover {
   width: 16rem;
+  background-color: #23232ef8;
 }
 
 .navbar:hover .link--text {
@@ -168,6 +169,7 @@ ul {
 
 .container {
   display: flex;
+  padding-left: 4rem;
 }
 .container__title {
   display: flex;
@@ -203,7 +205,6 @@ ul {
   display: flex;
   justify-content: end;
   background-color: #141418;
-
   height: 5rem;
 }
 
@@ -225,14 +226,6 @@ ul {
   line-height: 1.5;
 }
 
-/* grid */
-
-.grid--1x2 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-}
-
 .icon__image {
   height: 50px;
 }
@@ -242,7 +235,7 @@ ul {
   padding: 0;
   text-transform: uppercase;
   font-size: 4rem;
-  text-shadow: 0px 1px 3px #23232e;
+  text-shadow: 0px 2px 1px #00d2ee;
   margin: 0;
 }
 
@@ -277,6 +270,45 @@ ul {
   transition-duration: 0.2s;
 }
 
+@media screen and (min-width: 1700px) {
+  .main__title {
+    color: var(--text-secondary);
+    text-shadow: 0px 2px 1px #00d2ee;
+    text-transform: uppercase;
+    font-size: 8rem;
+    padding-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  .title__subheader {
+    font-size: 1.3rem;
+    padding-bottom: 1rem;
+  }
+
+  .highlight__text {
+    font-size: 1.3rem;
+  }
+
+  .container__title {
+    height: 13rem;
+  }
+
+}
+
+@media screen and (width: 820px) {
+  .container {
+    padding-left: 4rem;
+  }
+
+  .main__title {
+    text-shadow: 0px 2px 1px #00d2ee;
+  }
+}
+
+@media screen and (width: 768px) {
+  .container {
+    padding-left: 4rem;
+  }
+}
 @media screen and (max-width: 767px) {
   /* TODO: nav bar restructure for smaller devices */
 
@@ -298,33 +330,28 @@ ul {
   .main__title {
     color: var(--text-secondary);
     text-transform: uppercase;
+    text-shadow: 0px 2px 1px #00d2ee;
     font-size: 2rem;
-    text-shadow: 0px 1px 3px #23232e;
     padding-bottom: 1rem;
   }
 
   .container {
     display: flex;
     padding: 0;
-    margin: 0;
-    height: 3rem;
-    border: none;
   }
 
   .container__social {
     display: flex;
     justify-content: center;
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
   }
 
   .container__social > a {
-    padding-right: 2rem;
-    height: 2rem;
+    padding: 0;
   }
   .container__social > a:hover {
     filter: drop-shadow(0px 0px 5px rgb(15, 158, 163));
-    transform: scale(1.10);
+    transform: scale(1.1);
     transition-duration: 1s;
   }
 
@@ -358,8 +385,6 @@ ul {
     height: 10rem;
     justify-content: center;
     text-align: center;
-    padding-bottom: 4rem;
-    padding-top: 1rem;
     margin: 0;
     background-color: #141418;
   }
@@ -390,6 +415,7 @@ ul {
 /* Wallet Connection */
 
 .wallet__container {
+  display: flex;
   align-self: center;
   align-items: center;
   align-content: center;
