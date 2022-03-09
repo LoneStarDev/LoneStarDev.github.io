@@ -3,122 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="Notorious Five" />
-    <title>Notorious Five</title>
-    <link rel="apple-touch-icon shortcut icon" href="images/" />
-    <link
-      rel="apple-touch-icon shortcut icon"
-      sizes="60x60"
-      href="images/apple-touch-icon-ipad-76x76.png"
-    />
-    <link rel="apple-touch-icon shortcut icon" sizes="114x114" href="images/" />
-    <link
-      rel="apple-touch-icon shortcut icon"
-      sizes="144x144"
-      href="images/apple-touch-icon-ipad-retina-152x152.png"
-    />
+    <title>Alter Electric Company</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Sarpanch:wght@400;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <script
-      src="https://kit.fontawesome.com/ae94002ac5.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
+
   <body>
-    <nav class="navbar">
-      <ul class="navbar--nav">
-        <li class="logo">
-          <a href="#" class="nav--link">
-            <span class="link--text">Notorious FIVE</span>
-            <span
-              ><img class="icon__image" src="images/vault-icon.png" alt="" />
-            </span>
-          </a>
-        </li>
-        <li class="nav--item">
-          <a href="#" class="nav--link">
-            <span style="color: #00bfd7"
-              ><i class="fa-solid fa-chalkboard fa-2xl"></i
-            ></span>
-            <span class="link--text">Whitelist</span>
-          </a>
-        </li>
-        <li class="nav--item">
-          <a href="#" class="nav--link">
-            <span style="color: #00bfd7">
-              <img class="icon__nav" src="images/rare-icon.svg" alt=""
-            /></span>
-            <span class="link--text">Rarity</span>
-          </a>
-        </li>
-
-        <li class="nav--item">
-          <a href="#" class="nav--link">
-            <span style="color: #00bfd7"
-              ><i class="fa-solid fa-vault fa-2xl"></i
-            ></span>
-            <span class="link--text">Vault</span>
-          </a>
-        </li>
-        <li class="nav--item">
-          <a href="#" class="nav--link">
-            <span style="color: rgb(255, 255, 255)"
-              ><i class="fa-solid fa-circle-question fa-2xl"></i
-            ></span>
-            <span class="link--text">Contact Us</span>
-          </a>
-        </li>
-      </ul>
+    <nav class="nav">
+      <button class="drop__btn"><a href="#">Services</a></button>
+      <button class="drop__btn"><a href="#">Areas We Serve</a></button>
+      <button class="drop__btn"><a href="#">Meet the Team</a></button>
+      <button class="drop__btn"><a href="#">Contact Us</a></button>
     </nav>
-    <main>
-      <div class="nav__small">
-        <button class="menu__button">
-          <img class="icon--main" src="images/vault-icon.png" alt="" />
-        </button>
-      </div>
 
-      <div class="container container__header">
-        <div class="container__social">
-          <div class="wallet__container">
-            <button class="wallet__connect" onclick="getAccount()"><img class="icon__social-button" src="images/phantom-logo-freelogovectors.net_.png" alt="">
-              Connect Wallet
-            </button>
-            <a href="https://twitter.com/TheLoneStarDev" target="_blank"
-              ><img
-                class="icon__social"
-                src="images/Twitter-logo-white.png"
-                alt=""
-            /></a>
-            <a
-              href="https://discord.com/channels/942126833967718560/942126833967718565"
-              target="_blank"
-              ><img
-                class="icon__social"
-                src="images/icon_clyde_white_RGB.png"
-                alt=""
-            /></a>
-          </div>
+    <div class="container container__hero">
+      <span class="background__title--grey"></span>
+      <h1>Alter Electric Company</h1>
+      <h2>
+        Leading the industry in electrical contracting services since 1983.
+      </h2>
+      <div class="slideshow__container">
+        <div class="mySlides fade">
+          <img
+            src="images\NINTCHDBPICT000608572587.webp"
+            alt=""
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img
+            class="slide__image--fatherson"
+            src="images/alter_and_son.jpg"
+            alt=""
+            style="width: 100%"
+          />
+          <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/images.jpg" alt="" style="width: 100%" />
+          <div class="text"></div>
         </div>
       </div>
+      <br />
+    </div>
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
-      <div class="container container__title">
-        <h1 class="main__title">The Notorious Five</h1>
-        <p class="title__subheader">
-          A collection of 5,555 mugshots built on the Solana Blockchain.<br />
-          Maybe that
-          <span class="highlight__text"><a href="">heist</a></span> was a bad
-          idea.<br />
-        </p>
+    <div class="container container__titles">
+      <h2>Certified and trusted in our industry</h2>
+    </div>
+
+    <div class="container container__paragraph">
+      <p>
+        Alter Electric Company is certified in Lutron Lighting Control systems
+        with over 45 years of experience in the electrical contractor industry.
+        We pride ourselves in contuing to advance our knowledge in emerging
+        lighting technologies to give our clients the best lighting experience
+        the industry has to offer.
+      </p>
+    </div>
+
+    <div class="container container__certified">
+      <img
+        class="images__certified"
+        src="images/lutron-electronics-vector-logo.svg"
+        alt=""
+      />
+    </div>
+
+    <div class="container container__color"></div>
+    <div class="container__servicearea">
+      <div class="service-area">
+        <div class="container__map">
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=1bfQlIa2ahrGdX23krBfxcQJgdMlnrfd0&ehbc=2E312F"
+            width="640"
+            height="480"
+          ></iframe>
+        </div>
       </div>
-    </main>
+    </div>
+    <div class="container container__color"></div>
   </body>
-  <script src="index.js"></script>
+  <script src="JavaScript\index.js"></script>
 </html>
